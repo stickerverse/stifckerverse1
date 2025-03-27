@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --background: 0 0% 98%; /* Softer white */
+    --foreground: 222 47% 11%; /* Refined dark blue */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 252 56% 58%; /* Refined indigo */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 186 80% 43%; /* Sophisticated teal */
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 8% 46%;
+    --accent: 24 100% 50%; /* Vibrant orange for actions */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 91%; /* Softer borders */
+    --input: 220 13% 91%;
+    --ring: 252 56% 58%;
+    --radius: 1rem; /* Larger radius for more premium feel */
+    --chart-1: 252 56% 58%;
+    --chart-2: 186 80% 43%;
+    --chart-3: 24 100% 50%;
+    --chart-4: 350 73% 61%; /* Elegant rose */
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 0 0% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 0 0% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 252 56% 58%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 186 80% 43%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220 9% 18%;
+    --muted-foreground: 220 8% 70%;
+    --accent: 24 100% 50%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 9% 18%;
+    --input: 220 9% 18%;
+    --ring: 252 56% 58%;
+    --chart-1: 252 56% 58%;
+    --chart-2: 186 80% 43%;
+    --chart-3: 24 100% 50%;
+    --chart-4: 350 73% 61%;
+    --chart-5: 27 87% 67%;
+  }
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
